@@ -8,30 +8,63 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <div class="slider-wrapper">
     <section class="slider container">
-        <div class="slider__column">
-            <h2 class="slider__title">Stay focused on saving money</h2>
-            <p class="slider__text">It is important to stay focused on saving money in any way you can. We help&nbsp;you
+        <div class="column">
+            <h2 class="title">Stay focused on saving money</h2>
+            <p class="text">It is important to stay focused on saving money in any way you can. We help&nbsp;you
                 monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today
                 to get started!
             </p>
             <div class="app-download">
-                <a href="#" class="app-download__link">
+                <a href="#" class="app-download__link" download="#">
                     <img src="assets/img/logo-google-playstore.svg" alt="" class="app-download__icon">
                 </a>
-                <a href="#" class="app-download__link">
+                <a href="#" class="app-download__link" download="#">
                     <img src="assets/img/logo-apple-appstore.svg" alt="" class="app-download__icon">
                 </a>
-                <a href="#" class="app-download__link">
+                <a href="#" class="app-download__link" download="#">
                     <img src="assets/img/logo-windows-store.svg" alt="" class="app-download__icon">
                 </a>
             </div>
         </div>
-        <div class="slider__column">
+        <div class="column">
             <img src="assets/img/slider-img.jpg" alt="" class="slider__img">
         </div>
     </section>
 </div>
+
+<div class="feedback-wrapper">
+    <section class="feedback container">
+        <div class="column column_feedback">
+            <h2 class="title">Contact</h2>
+            <p class="text text_feedback">Questions or concerns? Just fill out the form below and our support team&nbsp;will
+                get
+                back to you within 24 hours</p>
+        </div>
+
+        <div class="column column_form">
+            <form class="feedback__form">
+                <div class="row row_flex">
+                    <input class="feedback__input" type="text" placeholder="First Name">
+                    <input class="feedback__input" type="text" placeholder="Last Name">
+                </div>
+                <div class="row">
+                    <input class="feedback__input" type="text" placeholder="Phone Number">
+                </div>
+                <div class="row">
+                    <select class="feedback__input feedback__service">
+                        <option selected value="Select Service" disabled>Select Service</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <button class="button" type="submit">Submit Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
 </body>
 </html>
