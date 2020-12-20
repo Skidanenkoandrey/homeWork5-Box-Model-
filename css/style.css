@@ -4,6 +4,7 @@
     --primary-background: #fff;
     --secondary-bg: #ED4C5C;
     --border-color: #333;
+    --hover-link: #ED4C5C;
 }
 
 * {
@@ -15,6 +16,10 @@
 a {
     text-decoration: none;
     color: inherit;
+}
+
+ul {
+    list-style-type: none;
 }
 
 @font-face {
@@ -193,4 +198,141 @@ body {
 
 .button:focus {
     outline: 0;
+}
+
+.footer-wrapper {
+    margin-top: 45px;
+    padding: 85px 0;
+}
+
+.footer {
+    font-size: 12px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 86px;
+}
+
+.footer-nav__item {
+    flex: 20%;
+    margin-right: 30px;
+}
+
+.footer-nav__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.footer__text {
+    max-width: 150px;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-list__item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.footer-nav-list__item {
+    text-transform: capitalize;
+}
+
+.footer-nav-list__link,
+.contacts__mail,
+.contacts__phone {
+    transition: ease 0.2s;
+}
+
+.footer-nav-list__link:hover,
+.contacts__mail:hover,
+.contacts__phone:hover {
+    color: var(--hover-link);
+    transition: ease 0.2s;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contacts__mail,
+.contacts__phone {
+    margin-bottom: 5px;
+    line-height: 14px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 66px;
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+@media screen and (max-width: 1070px) {
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .slider {
+        flex-direction: column-reverse;
+    }
+
+    .column:first-child {
+        margin: auto;
+    }
+
+    .slider__img {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+
+    .column {
+        margin: auto;
+        max-width: none;
+        width: 80%;
+        align-items: center;
+    }
+
+    .column_form {
+        margin: 45px auto 0;
+    }
+
+    .row_flex .feedback__input {
+        max-width: 48%;
+    }
+
+    .row:last-child {
+        text-align: center;
+    }
+
+    .footer-nav__item {
+        margin: 0 30px 30px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row_flex {
+        flex-direction: column;
+    }
+    .row_flex input:first-child {
+        margin-bottom: 24px;
+    }
+    .row_flex .feedback__input {
+        max-width: none;
+        width: 100%;
+    }
 }
